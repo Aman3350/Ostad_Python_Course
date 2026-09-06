@@ -33,12 +33,15 @@ while x==False:
     print(f"Average Marks: {avg_marks: .2f}")
     print(f"Grade: {grade}\n")
 
-    temp=input("Exit (Y/N): ")
-    print()
-
-    if temp=="Y":
-        x=True
-    elif temp=="N":
-        x=False
-    else:
-        print("Invalid Input.")
+    while True:
+        temp=input("Exit (Y/N): ")
+        print()
+        
+        if temp=="Y":
+            x=True
+            break
+        elif temp=="N":
+            x=False
+            break
+        else:
+            print("Invalid input, try again.\n")
